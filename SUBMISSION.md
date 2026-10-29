@@ -41,5 +41,5 @@ Summary: I collected business listings from OpenStreetMap's Overpass API (Google
 Thank you for the opportunity.
 
 Best regards,
-<Your Name>
-<Phone> | <Email>
+<Divya Jaiswal>
+<diyajaiswal9096@gmail.com>
