@@ -1,0 +1,16 @@
+# Optional: run MySQL without installing it.   docker compose up -d
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: listings_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      # Files in this folder run automatically the first time the container starts.
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+volumes:
+  mysql_data:
